@@ -27,7 +27,7 @@ h2 {
 h2::after {
   position: absolute;
   content: "";
-  background: #d43031;
+  background: #3ea99f;
   height: 2px;
   width: 70px;
   bottom: 0;
@@ -120,7 +120,7 @@ a:focus,
   margin: 0 40px 0 40px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-  color: #d43031;
+  color: #3ea99f;
 }
 .on {
   background-color: #262626 !important;
@@ -130,7 +130,7 @@ a:focus,
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #d43031 !important;
+  color: #3ea99f !important;
   background-color: transparent;
 }
 .navbar-toggle {
@@ -138,8 +138,8 @@ a:focus,
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #d43031;
-  border-color: #d43031;
+  background-color: #3ea99f;
+  border-color: #3ea99f;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -181,8 +181,8 @@ a:focus,
 .btn-custom:active,
 .btn-custom.active {
   color: #ddd;
-  border: 2px solid #d43031;
-  background-color: #d43031;
+  border: 2px solid #3ea99f;
+  background-color: #3ea99f;
 }
 
 /* Header Section */
@@ -402,7 +402,7 @@ header .intro-text {
 #subscribe h3::after {
   position: absolute;
   content: "";
-  background: #d43031;
+  background: #3ea99f;
   height: 2px;
   width: 40px;
   bottom: 0;
