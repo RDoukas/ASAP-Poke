@@ -3,7 +3,7 @@ html {
   font-family: "Open Sans", serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #777;
+  color: #333;
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
@@ -51,14 +51,14 @@ h5 {
   line-height: 20px;
 }
 p {
-  font-size: 15px;
+  font-size: 20px;
 }
 p.intro {
   margin: 12px 0 0;
   line-height: 24px;
 }
 a {
-  color: #8eb640;
+  color: #3ea99f;
 }
 a:hover,
 a:focus {
@@ -112,12 +112,12 @@ a:focus,
 #menu.navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
   color: #eee;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 22px;
   padding: 5px 0;
   border: 2px solid transparent;
   letter-spacing: 0.5px;
-  margin: 0 40px 0 40px;
+  margin: 0 20px 0 20px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
   color: #3ea99f;
@@ -131,7 +131,7 @@ a:focus,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #3ea99f !important;
-   rgba(248, 248, 248, 0)
+  background-color: #262626;
 }
 .navbar-toggle {
   border-radius: 0;
@@ -190,21 +190,13 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/gallery/rolling_sushi.jpg) center center no-repeat;
+  background: url(../img/gallery/poke_flowers.jpg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
-
-.intro img {
-
-	margin-right: 400px;
-	width: 600px;
-}
-
-
 
 .intro .overlay {
   background: rgba(0, 0, 0, 0.4);
@@ -277,16 +269,17 @@ header .intro-text {
   left: 0;
 }
 #about .about-text {
-  padding: 80px 0;
+  margin-top: 30px;
 }
 #about .about-img {
-  background: #444 url(../img/gallery/poke_flowers.jpg) center center no-repeat;
+  background: #444 url(../img/gallery/build-your-own.jpg) center center
+    no-repeat;
   background-size: cover;
-  height: 570px;
+  height: 600px;
 }
 #about p {
   line-height: 24px;
-  margin: 15px 0 30px;
+  margin: 0 0 30px;
 }
 /* Menu Section */
 #restaurant-menu {
@@ -320,12 +313,12 @@ header .intro-text {
 }
 #restaurant-menu .menu-item-name {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
   color: #444;
   margin-bottom: 10px;
 }
 #restaurant-menu .menu-item-description {
-  font-size: 15px;
+  font-size: 16px;
 }
 #restaurant-menu .menu-item-price {
   /* float: right; */

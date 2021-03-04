@@ -14,10 +14,8 @@ function submitSubscribe(event) {
   subscribedUsers.push(subscriber);
   document.querySelector("form").reset(); //clears form
 
-  console.warn("added", { subscribedUsers });
-
-  let pre = document.querySelector("#succcess pre");
-  pre.textContent = "\n" + JSON.stringify(subscribedUsers, "\t", 2);
+  console.log("The user's information has been added to the subscription list");
+  console.log(subscribedUsers);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
