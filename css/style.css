@@ -131,7 +131,7 @@ a:focus,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #3ea99f !important;
-  background-color: transparent;
+   rgba(248, 248, 248, 0)
 }
 .navbar-toggle {
   border-radius: 0;
@@ -197,6 +197,15 @@ a:focus,
   background-size: cover;
   -o-background-size: cover;
 }
+
+.intro img {
+
+	margin-right: 400px;
+	width: 600px;
+}
+
+
+
 .intro .overlay {
   background: rgba(0, 0, 0, 0.4);
 }
@@ -285,7 +294,7 @@ header .intro-text {
 }
 #restaurant-menu img {
   width: 300px;
-  box-shadow: 15px 0 #a7c44c;
+  box-shadow: 15px 0 #3ea99f;
 }
 #restaurant-menu h3 {
   padding: 10px 0;
