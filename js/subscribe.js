@@ -16,62 +16,65 @@ $("#email").keyup(function () {
   }
 });
 
-const newsletter = {};
+let newsletterMembers = {};
+console.log(newsletterMembers);
 
-newsletter.subscribe = document.querySelector("#subscribe");
-newsletter.form = document.querySelector("#subscribe > #subscribe-form");
-newsletter.subscribe = document.querySelector(
+newsletterMembers.subscribe = document.querySelector("#subscribe");
+newsletterMembers.form = document.querySelector("#subscribe > #subscribe-form");
+newsletterMembers.subscribe = document.querySelector(
   "#subscribe > #subscribe-form > button#subscribe"
 );
-newsletter.input = document.querySelector(
+newsletterMembers.input = document.querySelector(
   "#subscribe>#subscribe-form>.form-group>input"
 );
-newsletter.submitButton = document.querySelector(
+newsletterMembers.submitButton = document.querySelector(
   "#subscribe > #subscribe-form > .form-group > button"
 );
-newsletter.successMessage = document.querySelector(
+newsletterMembers.successMessage = document.querySelector(
   "#subscribe > #subscribe-form > #success"
 );
 
-newsletter.submitDelay = 1000;
+console.log(newsletterMembers.successMessage);
 
-newsletter.clickHandler = (e) => {
+newsletterMembers.submitDelay = 1000;
+
+newsletterMembers.clickHandler = (e) => {
   switch (e.target) {
-    case newsletter.subscribe:
+    case newsletterMembers.subscribe:
       console.log("case subscribe");
-      newsletter.subscribe.style.width = "37rem";
+      newsletterMembers.subscribe.style.width = "37rem";
       // e.target.classList.remove("shown");
-      // newsletter.input.classList.add("shown");
-      // newsletter.submitButton.classList.add("shown");
-      newsletter.input.focus();
+      // newsletterMembers.input.classList.add("shown");
+      // newsletterMembers.submitButton.classList.add("shown");
+      newsletterMembers.input.focus();
       break;
-    case newsletter.submitButton:
-      newsletter.submitForm();
+    case newsletterMembers.submitButton:
+      newsletterMembers.submitForm();
       break;
   }
 };
-newsletter.handleInputKeypress = (e) => {
+newsletterMembers.handleInputKeypress = (e) => {
   if (e.keyCode === 13) {
     e.preventDefault();
-    newsletter.submitForm();
+    newsletterMembers.submitForm();
   }
 };
-newsletter.submitForm = () => {
-  newsletter.input.style.transition = "all .6s ease";
-  newsletter.submitButton.style.transition = "all .6s ease";
-  // newsletter.input.classList.remove("shown");
-  // newsletter.submitButton.classList.remove("shown");
-  newsletter.main.style.transition =
+newsletterMembers.submitForm = () => {
+  newsletterMembers.input.style.transition = "all .6s ease";
+  newsletterMembers.submitButton.style.transition = "all .6s ease";
+  // newsletterMembers.input.classList.remove("shown");
+  // newsletterMembers.submitButton.classList.remove("shown");
+  newsletterMembers.main.style.transition =
     "all .6s cubic-bezier(0.47, 0.47, 0.27, 1.20) .4s";
-  newsletter.main.style.width = "";
-  // newsletter.successMessage.classList.add("shown");
+  newsletterMembers.main.style.width = "";
+  // newsletterMemmbers.successMessage.classList.add("shown");
   let submission = setTimeout(
-    () => newsletter.form.submit(),
-    newsletter.submitDelay
+    () => newsletterMemmbers.form.submit(),
+    newsletterMemmbers.submitDelay
   );
 };
 
 newsletter.input.addEventListener("keypress", (e) =>
-  newsletter.handleInputKeypress(e)
+  newsletterMemmbers.handleInputKeypress(e)
 );
-document.addEventListener("click", (e) => newsletter.clickHandler(e));
+document.addEventListener("click", (e) => newsletterMemmbers.clickHandler(e));
