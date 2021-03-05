@@ -102,7 +102,9 @@
           <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
           </svg>
-          <p>(312) 555-4444</p>
+          <p>
+            <a href="tel:+01-312-555-4444">(312) 555-4444</a>
+          </p>
         </div>
       </div>
       <div class="col-xs-12 col-sm-3">
@@ -143,8 +145,8 @@
     <div class="section-title text-center">
       <h2>Menu</h2>
     </div>
-    <div class="row">
-      <div class="col">
+    <row>
+      <div class="col-md-8 col-md-offset-2">
         <div class="menu-section text-center">
           <h2 class="menu-section-title">This Week's Seasonal Ingredient</h2>
           <div class="menu-item">
@@ -152,50 +154,57 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="menu-section text-center">
-          <h2 class="menu-section-title">Step 1: Choose Your Bowl</h2>
-          <div class="menu-item">
-            <div class="menu-item-name">Regular Bowl</div>
-            <div class="menu-item-description">24 oz. bowl - great for lunch or dinner! 
-              </br>
-              Choose Your Base: Sushi Rice, Brown Rice, Quinoa Tabouli or Greens
+    </row>
+      
+      <row>
+        <div class="col-md-8 col-md-offset-2">
+          <div class="menu-section text-center">
+            <h2 class="menu-section-title">Step 1: Choose Your Bowl</h2>
+            <div class="menu-item">
+              <div class="menu-item-name">Regular Bowl</div>
+              <div class="menu-item-description">24 oz. bowl - great for lunch or dinner! 
+                </br>
+                Choose Your Base: Sushi Rice, Brown Rice, Quinoa Tabouli or Greens
+              </div>
+              <div class="menu-item-price"> $12.95 </div>
             </div>
-            <div class="menu-item-price"> $12.95 </div>
-            
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Shorty Bowl</div>
-            
-            <div class="menu-item-description">18 oz. short bowl - perfect for a snack or light meal
+            <div class="menu-item">
+              <div class="menu-item-name">Shorty Bowl</div>
+              
+              <div class="menu-item-description">18 oz. short bowl - perfect for a snack or light meal
+                </br>
+                Choose Your Base: Sushi Rice, Brown Rice, Quinoa Tabouli or Greens
+              </div>
               </br>
-              Choose Your Base: Sushi Rice, Brown Rice, Quinoa Tabouli or Greens
+              <div class="menu-item-price"> $9.95 </div>
             </div>
-            </br>
-            <div class="menu-item-price"> $9.95 </div>
           </div>
         </div>
+      </row>
+      
+      <row>
+        <div class="col-md-8 col-md-offset-2">
+          <div class="menu-section text-center">
+            <h2 class="menu-section-title">Step 2: What's Next? Choose Your Poke</h2>
+            <div class="menu-item">
+              <div class="menu-item-name">Ahi Tuna</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-name">Atlantic Salmon</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-name">Gingered Beetse</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-name">Seasonal Ingredient of the Week</div>
+            </div>
+          </div>
       </div>
-      <div class="col">
-        <div class="menu-section text-center">
-          <h2 class="menu-section-title">Step 2: What's Next? Choose Your Poke</h2>
-          <div class="menu-item">
-            <div class="menu-item-name">Ahi Tuna</div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Atlantic Salmon</div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Gingered Beetse</div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Seasonal Ingredient of the Week</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
+      </row>
+      
+
+    <row>
+     <div class="col-md-8 col-md-offset-2">
         <div class="menu-section text-center">
           <h2 class="menu-section-title">Step 3: Get Stoked! Choose Your Style</h2>
           <div class="menu-item">
@@ -216,7 +225,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </row>
   </div>
 </div>
 <!-- Gallery Section -->
@@ -273,14 +282,14 @@
           <div class="col-md-6">
             <div class="form-group">
               <label for="firstName">First Name: </label>
-              <input type="text" id="firstName" class="form-control" placeholder="First Name" required="required">
+              <input type="text" id="firstName" class="form-control" placeholder="First Name" required>
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
               <label for="lastName">Last Name: </label>
-              <input type="text" id="lastName" class="form-control" placeholder="" required="required">
+              <input type="text" id="lastName" class="form-control" placeholder="Last Name" required>
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -289,14 +298,14 @@
           <div class="col-md-6">
             <div class="form-group">
               <label for="email">Email: </label>
-              <input type="email" id="email" class="form-control" placeholder="" required="required">
+              <input type="email" id="email" class="form-control" placeholder="Email Address" required>
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
               <label for="phoneNumber">Phone Number: </label>
-              <input type="tel" id="phoneNumber" class="form-control" placeholder="" required="required">
+              <input type="tel" id="phoneNumber"  class="form-control" placeholder="Phone Number" required>
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -304,8 +313,8 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <label for="birthdate">Birthdate: </label>
-              <input type="date" id="birthdate" class="form-control" placeholder="" required="required">
+              <label for="birthdate">Birthdate:</label>
+              <input type="date" id="birthdate" class="form-control" placeholder="Birthdate" required>
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -313,7 +322,7 @@
             <div class="form-group">
               <label for="zipCode">Zip Code: </label>
               <input type="text" id="zipCode" class="form-control" 
-              placeholder=""required="required">
+              placeholder="Zip Code"required>
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -324,28 +333,37 @@
   </div>
 </div>
 <div id="footer">
-  <div class="container text-center">
-    <div class="col-md-6">
+  <div class="container text-center">   
+    <div class="col-md-4">
       <div class="social">
         <ul>
           <li><a href="https://www.facebook.com/lettuceentertainyou/"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/LettuceEats/"><i class="fa fa-twitter"></i></a></li>
-          <!-- <li><a href="https://www.snapchat.com/add/lettuceeats/"><i class="fab fa-snapchat"></i></a></li> -->
           <li><a href="https://www.instagram.com/lettuceentertainyou/"><i class="fa fa-instagram"></i></a></li>
         </ul>
       </div>
     </div>
-    <div class="col-md-6">
-      <ul>
-        <li><a href="https://www.leye.com/accessibility/">Accesibility</a></li>
- 
-      </ul>
+    <div class="col-md-8">
+        <div class="company-links">
+          <ul>
+            <li><a href="https://www.leye.com/accessibility/">Accesibility</a></li>
+            <li><a href="https://www.leye.com/">LEYE.com</a></li>
+            <li><a href="https://www.leye.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="https://www.leye.com/terms-of-use/">Terms of Use</a></li>
+          </ul>
+        </div>
     </div>
   </div>
+    
+  </div>
 </div>
+<script>
+  $(".subscribe-form").validate();
+</script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.validate.js"></script>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script>  
+<script src="http://code.jqery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 

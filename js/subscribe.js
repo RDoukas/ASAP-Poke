@@ -20,21 +20,21 @@ function submitSubscribe(event) {
     subscriber.birthdate === "" ||
     subscriber.zipCode === ""
   ) {
-    console.log("This user is unable to subscribe to our newsletter");
-  } else if (
-    subscriber.zipCode.length !== 5 ||
-    typeof subscriber.zipCode !== "number"
-  ) {
-    console.log("The user entered an invalid zipcode");
-  } else {
-    subscribedUsers.push(subscriber);
-    document.querySelector("form").reset(); //clears form
-
-    console.log(
-      "The user's information has been added to the subscription list"
-    );
-    console.log(subscribedUsers);
+    window.alert("Please fill in all fields.");
+    // console.log("This user is unable to subscribe to our newsletter");
   }
+  // else if (subscriber.zipCode.length !== 5) {
+  //   // alert("Please enter a valid zip code.");
+  //   // console.log("The user entered an invalid zipcode");
+  // } else {
+  //   subscribedUsers.push(subscriber);
+  //   document.querySelector("form").reset(); //clears form
+
+  //   console.log(
+  //     "The user's information has been added to the subscription list"
+  //   );
+  //   console.log(subscribedUsers);
+  // }
 }
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -113,7 +113,7 @@ a:focus,
   text-transform: uppercase;
   color: #eee;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   padding: 5px 0;
   border: 2px solid transparent;
   letter-spacing: 0.5px;
@@ -239,6 +239,12 @@ header .intro-text {
 #delivery .delivery-item {
   margin: 0 20px;
 }
+#delivery .delivery-item a {
+  color: #444;
+}
+#delivery .delivery-item a:hover {
+  color: #3ea99f;
+}
 #delivery img {
   margin: 30px auto 20px;
   height: 100px;
@@ -285,6 +291,7 @@ header .intro-text {
 #restaurant-menu {
   padding: 100px 0 60px 0;
 }
+
 #restaurant-menu img {
   width: 300px;
   box-shadow: 15px 0 #3ea99f;
@@ -295,9 +302,11 @@ header .intro-text {
 }
 #restaurant-menu .menu-section hr {
   margin: 0 auto;
+  text-justify: center;
 }
 #restaurant-menu .menu-section {
   margin: 0 20px 80px;
+  text-justify: center;
 }
 #restaurant-menu .menu-section-title {
   font-size: 32px;
@@ -317,7 +326,7 @@ header .intro-text {
   margin-bottom: 10px;
 }
 #restaurant-menu .menu-item-description {
-  font-size: 26px;
+  font-size: 20px;
 }
 #restaurant-menu .menu-item-price {
   font-size: 24px;
@@ -339,6 +348,11 @@ header .intro-text {
 #frequent-diner {
   padding: 120px 0;
 }
+
+#frequent-diner a {
+  color: #3ea99f;
+  font-size: 20px;
+}
 #frequent-diner h2::after {
   bottom: 0;
   margin-left: 0;
@@ -347,37 +361,7 @@ header .intro-text {
 #frequent-diner img {
   max-width: 550px;
 }
-#frequent-diner .team-img {
-  display: inline-block;
-  position: relative;
-}
 /* Subscribe Section */
-
-#subscribe > #subscribeForm > #success {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fbb016;
-  font-weight: bold;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: scale(0);
-  opacity: 0;
-  transition: all 0.2s ease 0.6s;
-}
-
-#subscribe > #subscribeForm > #success {
-  transition: all 0.2s ease 0.6s;
-}
-/* 
-#subscribe > #subscribeForm > #success.shown {
-  transform: scale(1);
-  opacity: 1;
-} */
 
 #subscribe {
   padding: 100px 0;
@@ -475,9 +459,16 @@ label {
   background: #262626;
   padding: 40px 0 20px 0;
 }
+#footer .company-links ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+#footer .company-links:hover {
+  color: #3ea99f;
+}
 #footer .social {
   margin-top: -5px;
-  text-align: right;
+  text-align: left;
 }
 #footer .social ul li {
   display: inline-block;
@@ -492,13 +483,14 @@ label {
 #footer .social i.fa:hover {
   color: #3ea99f;
 }
+
 #footer p {
   font-size: 14px;
   color: #ccc;
 }
 #footer a {
   color: #ccc;
-  font-size: 20px;
+  font-size: 16px;
 }
 #footer a:hover {
   color: #3ea99f;
