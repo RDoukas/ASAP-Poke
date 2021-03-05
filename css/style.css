@@ -58,12 +58,12 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #3ea99f;
+  color: #222;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #222;
+  color: #3ea99f;
 }
 ul,
 ol {
@@ -304,27 +304,26 @@ header .intro-text {
   display: block;
   font-weight: 400;
   color: #444;
-  margin: 20px 0;
+  margin: 10px 0;
   text-align: center;
 }
 #restaurant-menu .menu-item {
-  margin: 45px 0;
-  font-size: 18px;
+  margin: 40px 0;
 }
 #restaurant-menu .menu-item-name {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 26px;
   color: #444;
   margin-bottom: 10px;
 }
 #restaurant-menu .menu-item-description {
-  font-size: 16px;
+  font-size: 26px;
 }
 #restaurant-menu .menu-item-price {
-  /* float: right; */
+  font-size: 24px;
   font-weight: 400;
   color: #555;
-  /* margin-top: -36px; */
+  margin-top: 5px;
 }
 /* Gallery Section */
 #gallery {
@@ -332,6 +331,9 @@ header .intro-text {
 }
 #gallery .gallery-item {
   margin: 0 -15px;
+}
+#gallery .gallery-item img {
+  height: 200px;
 }
 /* Frequent Diner Section */
 #frequent-diner {
@@ -384,7 +386,7 @@ header .intro-text {
 
 #subscribe .subscribe-item p {
   font-size: 15px;
-  color: #777;
+  color: #ccc;
 }
 #subscribe .section-title {
   margin-top: 60px;
@@ -398,7 +400,7 @@ header .intro-text {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
-  color: #aaa;
+  color: #ccc;
   padding: 20px 0;
 }
 #subscribe h3::after {
@@ -416,9 +418,10 @@ header .intro-text {
   text-align: left;
 }
 label {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
+  color: #ccc;
   float: left;
 }
 #subscribe .form-control {
@@ -483,19 +486,21 @@ label {
 #footer .social i.fa {
   font-size: 24px;
   padding: 4px;
-  color: #888;
+  color: #ccc;
   transition: all 0.3s;
 }
 #footer .social i.fa:hover {
-  color: #eee;
+  color: #3ea99f;
 }
 #footer p {
   font-size: 14px;
-  color: #666;
+  color: #ccc;
 }
 #footer a {
-  color: #999;
+  color: #ccc;
+  font-size: 20px;
 }
 #footer a:hover {
-  color: #eee;
+  color: #3ea99f;
+  font-size: 20px;
 }
