@@ -281,16 +281,16 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <label for="firstName">First Name: </label>
+              <label for="firstName" class="form-label">First Name: </label>
               <input type="text" id="firstName" class="form-control" placeholder="First Name" required>
-              <p class="help-block text-danger"></p>
+              <!-- <p class="help-block text-danger">Please enter your first name</p> -->
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
               <label for="lastName">Last Name: </label>
               <input type="text" id="lastName" class="form-control" placeholder="Last Name" required>
-              <p class="help-block text-danger"></p>
+              <!-- <p class="help-block text-danger">Please enter your last name</p> -->
             </div>
           </div>
         </div>
@@ -299,14 +299,14 @@
             <div class="form-group">
               <label for="email">Email: </label>
               <input type="email" id="email" class="form-control" placeholder="Email Address" required>
-              <p class="help-block text-danger"></p>
+              <!-- <p class="help-block text-danger">Please add a valid email address</p> -->
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
               <label for="phoneNumber">Phone Number: </label>
               <input type="tel" id="phoneNumber"  class="form-control" placeholder="Phone Number" required>
-              <p class="help-block text-danger"></p>
+              <!-- <p class="help-block text-danger">Please enter a valid phone number</p> -->
             </div>
           </div>
         </div>
@@ -315,7 +315,7 @@
             <div class="form-group">
               <label for="birthdate">Birthdate:</label>
               <input type="date" id="birthdate" class="form-control" placeholder="Birthdate" required>
-              <p class="help-block text-danger"></p>
+              <!-- <p class="help-block text-danger">Tell us your birthday!</p> -->
             </div>
           </div>
           <div class="col-md-6">
@@ -323,7 +323,7 @@
               <label for="zipCode">Zip Code: </label>
               <input type="text" id="zipCode" class="form-control" 
               placeholder="Zip Code"required>
-              <p class="help-block text-danger"></p>
+              <!-- <p class="help-block text-danger">Don't forget your zipcode!</p> -->
             </div>
           </div>
         </div>
@@ -362,6 +362,8 @@
 </script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.validate.js"></script>
+<link href="validation.min.css" rel="stylesheet">
+<script src="validation.min.js"></script>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script>  
 <script src="http://code.jqery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script> 

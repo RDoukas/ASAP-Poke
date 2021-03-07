@@ -342,7 +342,7 @@ header .intro-text {
   margin: 0 -15px;
 }
 #gallery .gallery-item img {
-  height: 200px;
+  /* height: 200px; */
 }
 /* Frequent Diner Section */
 #frequent-diner {
