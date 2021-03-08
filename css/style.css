@@ -292,10 +292,6 @@ header .intro-text {
   padding: 100px 0 60px 0;
 }
 
-#restaurant-menu img {
-  width: 300px;
-  box-shadow: 15px 0 #3ea99f;
-}
 #restaurant-menu h3 {
   padding: 10px 0;
   text-transform: uppercase;
@@ -341,9 +337,7 @@ header .intro-text {
 #gallery .gallery-item {
   margin: 0 -15px;
 }
-#gallery .gallery-item img {
-  /* height: 200px; */
-}
+
 /* Frequent Diner Section */
 #frequent-diner {
   padding: 120px 0;
@@ -368,10 +362,6 @@ header .intro-text {
   background: #333;
 }
 
-#subscribe .subscribe-item p {
-  font-size: 15px;
-  color: #ccc;
-}
 #subscribe .section-title {
   margin-top: 60px;
   margin-bottom: 40px;
@@ -397,17 +387,18 @@ header .intro-text {
   margin-left: -20px;
   left: 50%;
 }
-#subscribe .text-danger {
-  color: #cc0033;
-  text-align: left;
+#subscribe span {
+  color: #ccc;
+  text-align: center;
 }
 label {
   font-size: 16px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
-  color: #ccc;
   float: left;
+  color: #ccc;
 }
+
 #subscribe .form-control {
   display: block;
   width: 100%;
@@ -442,16 +433,6 @@ label {
 }
 .form-control:-ms-input-placeholder {
   color: #999;
-}
-#subscribe .subscribe-item {
-  margin: 20px 0 40px 0;
-}
-#subscribe .subscribe-item span {
-  font-weight: 400;
-  color: #aaa;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-  display: inline-block;
 }
 
 /* Footer Section*/
