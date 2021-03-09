@@ -19,11 +19,15 @@ function submitSubscribe(event) {
   subscriber.phoneNumber = subscriber.phoneNumber.replace(/\D/g, "");
 
   // conditional to confirm the form is filled out correctly, span triggered if incorrect
+
+  // for (const field in subscriber) {
+  //   console.log(`${subscriber[field]}`);
+  // }
   if (subscriber.firstName === "") {
     isValid = false;
     document.getElementById("firstNameError").innerHTML =
       "Please enter your first name";
-    console.log("The user has not entered their first name.");
+    console.log("The user has not entered their first name");
   } else {
     document.getElementById("firstNameError").innerHTML = "";
   }
@@ -36,6 +40,7 @@ function submitSubscribe(event) {
     document.getElementById("lastNameError").innerHTML = "";
   }
   if (subscriber.email === "") {
+    isValid = false;
     document.getElementById("emailError").innerHTML =
       "Please enter your email.";
     console.log("The user has not entered their email");
@@ -43,6 +48,7 @@ function submitSubscribe(event) {
     document.getElementById("emailError").innerHTML = "";
   }
   if (subscriber.phoneNumber === "" || subscriber.phoneNumber.length !== 10) {
+    isValid = false;
     document.getElementById("phoneNumberError").innerHTML =
       "Please enter your phone number";
     console.log("The user has not entered their phone number");
@@ -50,6 +56,7 @@ function submitSubscribe(event) {
     document.getElementById("phoneNumberError").innerHTML = "";
   }
   if (subscriber.birthdate === "") {
+    isValid = false;
     document.getElementById("birthdateError").innerHTML =
       "Please enter your birthday, we want to celebrate!";
     console.log("The user has not entered their birthdate");
@@ -57,6 +64,7 @@ function submitSubscribe(event) {
     document.getElementById("birthdateError").innerHTML = "";
   }
   if (subscriber.zipCode === "" || subscriber.zipCode.length !== 5) {
+    isValid = false;
     document.getElementById("zipCodeError").innerHTML =
       "Please enter a valid Zip Code";
     console.log("The user has not entered a valid zip code");

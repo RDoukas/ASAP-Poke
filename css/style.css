@@ -8,6 +8,7 @@ html {
   width: 100% !important;
   height: 100% !important;
 }
+
 h1,
 h2,
 h3,
@@ -106,18 +107,18 @@ a:focus,
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: #5c5c5c;
-  border-color: #5c5c5c;
+  background-color: rgba(248, 248, 248, 0);
+  border-color: rgba(231, 231, 231, 0);
 }
 #menu.navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
   color: #eee;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 15px;
   padding: 5px 0;
   border: 2px solid transparent;
   letter-spacing: 0.5px;
-  margin: 0 20px 0 20px;
+  margin: 0 40px 0 40px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
   color: #3ea99f;
@@ -131,7 +132,7 @@ a:focus,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #3ea99f !important;
-  background-color: #262626;
+  background-color: transparent;
 }
 .navbar-toggle {
   border-radius: 0;
@@ -384,7 +385,7 @@ header .intro-text {
   left: 50%;
 }
 #subscribe span {
-  color: #ccc;
+  color: red;
   text-align: center;
 }
 label {
