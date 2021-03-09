@@ -106,8 +106,8 @@ a:focus,
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: rgba(248, 248, 248, 0);
-  border-color: rgba(231, 231, 231, 0);
+  background-color: #5c5c5c;
+  border-color: #5c5c5c;
 }
 #menu.navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
@@ -295,10 +295,6 @@ header .intro-text {
 #restaurant-menu h3 {
   padding: 10px 0;
   text-transform: uppercase;
-}
-#restaurant-menu .menu-section hr {
-  margin: 0 auto;
-  text-justify: center;
 }
 #restaurant-menu .menu-section {
   margin: 0 20px 80px;

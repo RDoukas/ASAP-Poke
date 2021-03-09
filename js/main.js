@@ -33,7 +33,9 @@ function main() {
         $(".navbar-default").removeClass("on");
       }
     });
-
+    // var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    //   target: "#navbar-default",
+    // });
     $("body").scrollspy({
       target: ".navbar-default",
       offset: 80,
