@@ -223,7 +223,13 @@ header .intro-text {
   padding-top: 200px;
   padding-bottom: 50px;
   text-align: center;
+  width: 100%;
 }
+
+header .intro-text img {
+  width: 75%;
+}
+
 /* Delivery Section */
 .bi-telephone-fill {
   margin-bottom: 30px;
@@ -350,7 +356,9 @@ header .intro-text {
   left: 0;
 }
 #frequent-diner img {
-  max-width: 550px;
+  width: 115%;
+  /* justify-content: left; */
+  padding-right: 2px;
 }
 /* Subscribe Section */
 
@@ -389,6 +397,7 @@ header .intro-text {
   color: red;
   text-align: center;
 }
+
 label {
   font-size: 16px;
   font-weight: 400;
