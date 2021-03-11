@@ -20,56 +20,60 @@ function submitSubscribe(event) {
 
   // conditional to confirm the form is filled out correctly, span triggered if incorrect
 
-  // for (const field in subscriber) {
-  //   console.log(`${subscriber[field]}`);
+  // if (subscriber.birthdate === "") {
+  //   isValid = false;
+  //   document.getElementById("birthdateError").innerHTML =
+  //     "Please enter your birthday, we want to celebrate!";
+  //   console.log("The user has not entered their birthdate");
+  // } else {
+  //   document.getElementById("birthdateError").innerHTML = "";
   // }
-  if (subscriber.firstName === "") {
-    isValid = false;
-    document.getElementById("firstNameError").innerHTML =
-      "Please enter your first name";
-    console.log("The user has not entered their first name");
-  } else {
-    document.getElementById("firstNameError").innerHTML = "";
+  // if (subscriber.zipCode === "" || subscriber.zipCode.length !== 5) {
+  //   isValid = false;
+  //   document.getElementById("zipCodeError").innerHTML =
+  //     "Please enter a valid Zip Code";
+  //   console.log("The user has not entered a valid zip code");
+  // } else {
+  //   document.getElementById("zipCodeError").innerHTML = "";
+  // }
+
+  let information = document.getElementsByTagName("input");
+  console.log(information);
+  let errorMessage = document.getElementById("errorMessage").innerHTML;
+
+  for (let i = 0; i < information.length - 1; i++) {
+    let currentInput = information[i].value;
+    let inputName = information[i].placeholder;
+    if (currentInput === "") {
+      isValid = false;
+      console.log(`This user is missing ${inputName}`);
+      document.getElementById(
+        "errorMessage"
+      ).innerHTML = `Please enter a valid ${inputName}`;
+    } else {
+      document.getElementById("errorMessage").innerHTML = "";
+    }
   }
-  if (subscriber.lastName === "") {
+
+  if (subscriber.phoneNumber.length > 10) {
     isValid = false;
-    document.getElementById("lastNameError").innerHTML =
-      "Please enter your last name";
-    console.log("The user has not entered their last name");
+    errorMessage = "Your phone number is too long";
+    console.log("The users phone number is too long");
+  } else if (subscriber.phoneNumber.length < 10) {
+    isValid = false;
+    errorMessage = "Your phone number isn't long enough";
+    console.log("Your phone number isn't long enough");
   } else {
-    document.getElementById("lastNameError").innerHTML = "";
+    errorMessage = "";
   }
-  if (subscriber.email === "") {
+  if (subscriber.zipCode.length < 5) {
     isValid = false;
-    document.getElementById("emailError").innerHTML =
-      "Please enter your email.";
-    console.log("The user has not entered their email");
-  } else {
-    document.getElementById("emailError").innerHTML = "";
-  }
-  if (subscriber.phoneNumber === "" || subscriber.phoneNumber.length !== 10) {
+    errorMessage = "Your zip code isn't long enough";
+    console.log("Your zip code isn't long enough");
+  } else if (subscriber.zipCode.length > 5) {
     isValid = false;
-    document.getElementById("phoneNumberError").innerHTML =
-      "Please enter your phone number";
-    console.log("The user has not entered their phone number");
-  } else {
-    document.getElementById("phoneNumberError").innerHTML = "";
-  }
-  if (subscriber.birthdate === "") {
-    isValid = false;
-    document.getElementById("birthdateError").innerHTML =
-      "Please enter your birthday, we want to celebrate!";
-    console.log("The user has not entered their birthdate");
-  } else {
-    document.getElementById("birthdateError").innerHTML = "";
-  }
-  if (subscriber.zipCode === "" || subscriber.zipCode.length !== 5) {
-    isValid = false;
-    document.getElementById("zipCodeError").innerHTML =
-      "Please enter a valid Zip Code";
-    console.log("The user has not entered a valid zip code");
-  } else {
-    document.getElementById("zipCodeError").innerHTML = "";
+    errorMessage = "Your zip code is too loo long";
+    console.log("Your zip code is too loo long");
   }
 
   if (isValid) {

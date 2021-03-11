@@ -384,7 +384,8 @@ header .intro-text {
   margin-left: -20px;
   left: 50%;
 }
-#subscribe span {
+
+#subscribe #errorMessage {
   color: red;
   text-align: center;
 }
